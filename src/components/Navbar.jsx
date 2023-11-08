@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
@@ -7,10 +8,7 @@ const [nav, setNav] = useState(false);
 const handleNavClink = () => setNav(!nav)
 
     return (
-        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-black text-gray-300'>
-            <div>
-                Brian Pizzimenti
-            </div>
+        <div className='fixed w-full h-[80px] flex justify-end items-center px-4 bg-black text-gray-300'>
 
             {/* Nav */}
             <ul className='hidden md:flex'>
