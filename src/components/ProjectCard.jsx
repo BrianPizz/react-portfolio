@@ -1,12 +1,18 @@
 import React from 'react'
 
-function ProjectCard({ key, title, description, tech1, tech2, codeLink, demoLink, imageLink }) {
+function ProjectCard({ key, title, description, tech1, tech2, codeLink, demoLink, imageLink, index }) {
+        // display image on left side on projects with an even numbered index
+    const isEven = index % 2 === 0;
+    const leftSide = isEven ? 'md:w-6/12' : 'md:w-6/12 order-2'
+
     return (
         <div key={key} className='border-2 md:flex w-full p-3 rounded-2xl mb-5 shadow-2xl'>
-            <div className='rounded-2xl md:w-6/12 overflow-clip '>
+            {/* image section */}
+            <div className={`rounded-2xl overflow-clip ${leftSide}`}>
                 <img src={imageLink} alt={title} className='object-scale-down h-full' />
             </div>
-            <div className='md:w-6/12 px-4 my-2 text-center flex flex-col'>
+            {/* info section */}
+            <div className='text-center flex flex-col md:w-6/12 px-4 my-2'>
                 <div>
                     <h2 className='text-xl'> {title} </h2>
                     <p className=' text-slate-300'> {description} </p>

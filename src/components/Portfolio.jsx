@@ -38,14 +38,15 @@ const projects = [
 
 function Portfolio() {
     return (
-        <div name='portfolio' className='w-full h-screen bg-gradient-to-t to-slate-700 from-black text-white flex flex-col items-center'>
+        <div name='portfolio' className='w-full bg-gradient-to-t to-slate-700 from-black text-white flex flex-col items-center'>
             <p className='text-rose-300 text-xl mb-4'>Portfolio</p>
 
             {/* projects container */}
             <div className='w-8/12'>
                 {/* projects */}
-                {projects.map((project) => (
+                {projects.map((project, index) => (
                 <ProjectCard 
+                index={index}
                 key={project.id}
                 title={project.title}
                 description={project.description}

@@ -5,7 +5,8 @@ function About() {
         <div name='about' className='w-full h-screen bg-gradient-to-t from-slate-700 to-black'>
             <div className='flex justify-center items-center w-full h-full'>
 
-                <div className='bg-about w-80 h-80 bg-no-repeat bg-fill bg-center hidden md:block mr-5 rounded-lg'>
+                <div className='hidden md:block mr-5'>
+                    <img src="/assets/images/8bitpix.png" alt="Brian's avatar" />
                 </div>
                 <div className='ml-5 md:w-3/12'>
                     <p className='text-xl text-rose-300'>About Me 👨‍💻</p>
