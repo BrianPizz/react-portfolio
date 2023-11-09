@@ -1,12 +1,12 @@
 import React from 'react'
 // destructure props
-function ProjectCard({ key, title, description, tech1, tech2, codeLink, demoLink, imageLink, index }) {
+function ProjectCard({ id, title, description, tech1, tech2, codeLink, demoLink, imageLink, index }) {
     // display image on left side on projects with an even numbered index
     const isEven = index % 2 === 0;
     const leftSide = isEven ? 'md:w-6/12' : 'md:w-6/12 order-2'
 
     return (
-        <div key={key} className=' bg-black md:flex w-full p-5 rounded-2xl mb-5 shadow-2xl'>
+        <div key={id} className=' bg-black md:flex w-full p-5 rounded-2xl mb-5 shadow-2xl'>
             {/* image section */}
             <div className={`rounded-2xl overflow-clip ${leftSide}`}>
                 <img src={imageLink} alt={title} className='object-scale-down h-full' />

@@ -1,5 +1,5 @@
 import Home from "./components/Home";
-import Navbar from "./components/Nav/Navbar";
+import Header from "./components/Nav/Header";
 import About from "./components/Personal/About";
 import Portfolio from "./components/Work/Portfolio";
 import Contact from "./components/Contact/Contact";
@@ -9,7 +9,7 @@ import Footer from "./components/Nav/Footer";
 export default function App() {
   return (
     <div>
-      <Navbar />
+      <Header />
       <Home />
       <About />
       <Portfolio /> 

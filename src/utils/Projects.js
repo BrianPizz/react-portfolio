@@ -50,7 +50,7 @@ const projects = [
         imageLink: '/assets/images/moodie.png',
     },
     {
-        id: 5,
+        id: 6,
         title: 'Password Generator',
         description: 'Used to generate a random secure password.',
         tech1: 'JavaScript',

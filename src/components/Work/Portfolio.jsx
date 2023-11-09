@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectCard from './ProjectCard'
+import ProjectCard from './Project'
 // import projects array from projects file
 import projects from '../../utils/Projects'
 
@@ -12,8 +12,8 @@ function Portfolio() {
                 {/* pass projects props */}
                 {projects.map((project, index) => (
                     <ProjectCard
-                        index={index}
                         key={project.id}
+                        index={index}
                         title={project.title}
                         description={project.description}
                         tech1={project.tech1}
