@@ -10,7 +10,7 @@ const projects = [
         tech2: 'Express.js',
         codeLink: 'https://github.com/BrianPizz/fithub',
         demoLink: 'https://morning-ravine-18715-2df03199dbf8.herokuapp.com/',
-        imageLink: '/assets/images/fithub.png', 
+        imageLink: '/assets/images/fithub.png',
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ const projects = [
         tech2: 'MySQL',
         codeLink: 'https://github.com/BrianPizz/tech-blog',
         demoLink: 'https://secret-earth-93021-43fb7762532d.herokuapp.com/',
-        imageLink: '/assets/images/techblog.png', 
+        imageLink: '/assets/images/techblog.png',
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ const projects = [
         tech2: 'HTML/CSS',
         codeLink: 'https://github.com/BrianPizz/weather-dashboard',
         demoLink: 'https://brianpizz.github.io/weather-dashboard/',
-        imageLink: '/assets/images/weatherapp.png', 
+        imageLink: '/assets/images/weatherapp.png',
     },
     {
         id: 4,
@@ -40,7 +40,7 @@ const projects = [
         tech2: 'Express.js',
         codeLink: 'https://github.com/BrianPizz/note-taker',
         demoLink: 'https://secure-wildwood-92062-f253f9758515.herokuapp.com/',
-        imageLink: '/assets/images/noteapp.png', 
+        imageLink: '/assets/images/noteapp.png',
     },
     {
         id: 5,
@@ -50,7 +50,7 @@ const projects = [
         tech2: 'HTML/BULMA',
         codeLink: 'https://github.com/BrianPizz/caseCamels-Moodie',
         demoLink: 'https://brianpizz.github.io/caseCamels-Moodie/',
-        imageLink: '/assets/images/moodie.png', 
+        imageLink: '/assets/images/moodie.png',
     },
     {
         id: 5,
@@ -60,30 +60,30 @@ const projects = [
         tech2: 'HTML/CSS',
         codeLink: 'https://github.com/BrianPizz/random-password-generator',
         demoLink: 'https://brianpizz.github.io/random-password-generator/',
-        imageLink: '/assets/images/passwordapp.png', 
+        imageLink: '/assets/images/passwordapp.png',
     },
 ]
 
 function Portfolio() {
     return (
-        <div name='portfolio' className='w-full bg-slate-700 text-white flex flex-col items-center'>
-            <p className='text-rose-300 text-xl mb-4'>Portfolio</p>
+        <div name='portfolio' className='w-full bg-slate-700 text-white flex flex-col items-center pt-20'>
+            <p className='text-4xl text-rose-300 mb-4'>Portfolio</p>
 
             {/* projects container */}
             <div className='w-10/12 md:w-8/12'>
                 {/* projects */}
                 {projects.map((project, index) => (
-                <ProjectCard 
-                index={index}
-                key={project.id}
-                title={project.title}
-                description={project.description}
-                tech1={project.tech1}
-                tech2={project.tech2}
-                codeLink={project.codeLink}
-                demoLink={project.demoLink}
-                imageLink={project.imageLink}
-                />
+                    <ProjectCard
+                        index={index}
+                        key={project.id}
+                        title={project.title}
+                        description={project.description}
+                        tech1={project.tech1}
+                        tech2={project.tech2}
+                        codeLink={project.codeLink}
+                        demoLink={project.demoLink}
+                        imageLink={project.imageLink}
+                    />
                 ))}
             </div>
 

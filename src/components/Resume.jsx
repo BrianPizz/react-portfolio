@@ -3,8 +3,8 @@ import React from 'react';
 function Resume() {
   return (
     <div name='resume' className='w-full bg-gradient-to-t from-black to-slate-700'>
-        <p className='text-xl text-rose-300 text-center pt-6'>Resume</p>
-      <div className='container mx-auto py-10 px-4'>
+      <p className='text-4xl text-rose-300 mb-4 text-center pt-20'>Resume</p>
+      <div className='container mx-auto py-5 px-4'>
         <p className='text-white mb-4'>Download <span className='text-rose-300'><a href="https://drive.google.com/file/d/14IaavanMSDmXGpOGmR8vp50Ebm1ZZdXE/view?usp=drive_link" target='blank'>resume</a></span></p>
         <h1 className='text-3xl font-bold text-white mb-4'>Brian Pizzimenti</h1>
 

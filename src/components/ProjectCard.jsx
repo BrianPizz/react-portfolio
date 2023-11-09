@@ -1,7 +1,7 @@
 import React from 'react'
 
 function ProjectCard({ key, title, description, tech1, tech2, codeLink, demoLink, imageLink, index }) {
-        // display image on left side on projects with an even numbered index
+    // display image on left side on projects with an even numbered index
     const isEven = index % 2 === 0;
     const leftSide = isEven ? 'md:w-6/12' : 'md:w-6/12 order-2'
 

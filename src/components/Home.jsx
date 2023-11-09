@@ -1,5 +1,6 @@
-import React from 'react'
-import { HiArrowNarrowRight } from 'react-icons/hi'
+import React from 'react';
+import { HiArrowNarrowRight } from 'react-icons/hi';
+import { Link } from 'react-scroll';
 
 const Home = () => {
     return (
@@ -26,12 +27,14 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='my-2'>
-                    <button className='group text-rose-500 border-rose-500 border-2 px-6 py-3 text-xl flex items-center hover:bg-rose-500 hover:text-black'>
-                        My Work 
-                        <span className='group-hover:rotate-90 duration-300 ml-1'>
-                        <HiArrowNarrowRight className='ml-3' />
-                        </span>
+                    <Link to='portfolio' activeClass='active' smooth={true} spy={true} duration={500}>
+                        <button className='group text-rose-500 border-rose-500 border-2 px-6 py-3 text-xl flex items-center hover:bg-rose-500 hover:text-black'>
+                            My Work
+                            <span className='group-hover:rotate-90 duration-300 ml-1'>
+                                <HiArrowNarrowRight className='ml-3' />
+                            </span>
                         </button>
+                    </Link>
                 </div>
             </div>
 
