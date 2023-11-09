@@ -2,7 +2,7 @@ import React from 'react';
 
 function Resume() {
   return (
-    <div className='w-full bg-gradient-to-t from-black to-slate-700'>
+    <div name='resume' className='w-full bg-gradient-to-t from-black to-slate-700'>
         <p className='text-xl text-rose-300 text-center pt-6'>Resume</p>
       <div className='container mx-auto py-10 px-4'>
         <p className='text-white mb-4'>Download <span className='text-rose-300'><a href="https://drive.google.com/file/d/14IaavanMSDmXGpOGmR8vp50Ebm1ZZdXE/view?usp=drive_link" target='blank'>resume</a></span></p>

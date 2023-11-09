@@ -1,18 +1,15 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   // set home as the active link
-  const [activeLink, setActiveLink] = useState('Home'); 
+  const [activeLink, setActiveLink] = useState('Home');
 
   const handleNavClick = () => setNav(!nav);
 
-  // set clicked link to active
-  const handleNavLinkClick = (link) => {
-    setActiveLink(link);
-    setNav(false); 
-  };
+
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-black text-gray-300'>
@@ -20,36 +17,31 @@ const Navbar = () => {
 
       {/* Nav */}
       <ul className='hidden md:flex'>
-        <li
-          onClick={() => handleNavLinkClick('Home')}
-          className={activeLink === 'Home' ? 'active' : ''}
-        >
-          Home
-        </li>
-        <li
-          onClick={() => handleNavLinkClick('About')}
-          className={activeLink === 'About' ? 'active' : ''}
-        >
-          About
-        </li>
-        <li
-          onClick={() => handleNavLinkClick('Portfolio')}
-          className={activeLink === 'Portfolio' ? 'active' : ''}
-        >
-          Portfolio
-        </li>
-        <li
-          onClick={() => handleNavLinkClick('Resume')}
-          className={activeLink === 'Resume' ? 'active' : ''}
-        >
-          Resume
-        </li>
-        <li
-          onClick={() => handleNavLinkClick('Contact')}
-          className={activeLink === 'Contact' ? 'active' : ''}
-        >
-          Contact
-        </li>
+        <Link to='home' activeClass='active' smooth={true} spy={true} duration={500}>
+          <li>
+            Home
+          </li>
+        </Link>
+        <Link to='about' activeClass='active' smooth={true} spy={true} duration={500}>
+          <li>
+            About
+          </li>
+        </Link>
+        <Link to='portfolio' activeClass='active' smooth={true} spy={true} duration={500}>
+          <li>
+            Portfolio
+          </li>
+        </Link>
+        <Link to='resume' activeClass='active' smooth={true} spy={true} duration={500}>
+          <li>
+            Resume
+          </li>
+        </Link>
+        <Link to='contact' activeClass='active' smooth={true} spy={true} duration={500}>
+          <li>
+            Contact
+          </li>
+        </Link>
       </ul>
 
       {/* Menu */}
