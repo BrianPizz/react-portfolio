@@ -15,3 +15,17 @@
         @apply cursor-pointer;
     }
 }
+
+@media (max-width: 767px) {
+    .mobile-hover-effect {
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+  
+    .mobile-hover-effect:hover {
+      opacity: 1;
+    }
+  }
+  
