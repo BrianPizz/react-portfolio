@@ -3,11 +3,9 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
+  // toggle mobile nav visibility on click
   const [nav, setNav] = useState(false);
-
   const handleNavClick = () => setNav(!nav);
-
-
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-black text-gray-300'>

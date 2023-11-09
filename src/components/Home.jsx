@@ -1,11 +1,11 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
+import Tech from './Personal/Tech';
 
 const Home = () => {
     return (
         <div name='home' className="w-full h-screen bg-hero bg-no-repeat bg-cover bg-center bg-fixed">
-
             {/* container */}
             <div className='max-w-1000px mx-auto px-8 flex flex-col justify-center h-full'>
                 <p className='text-rose-500 sm:text-2xl'>👋🏻 Hi, my name is</p>
@@ -14,17 +14,7 @@ const Home = () => {
                 <div className='text-white flex sm:text-xl my-4'>
                     <p className='mr-3 my-auto'>Tech Stack</p>
                     <div className='mr-3 my-auto'>|</div>
-                    <div>
-                        <i className="devicon-html5-plain colored text-3xl sm:text-4xl mr-1"></i>
-                        <i className="devicon-css3-plain colored text-3xl sm:text-4xl"></i>
-                        <i className="devicon-javascript-plain colored text-3xl sm:text-4xl mx-2"></i>
-                        <i className="devicon-nodejs-plain colored text-3xl sm:text-4xl mx-2"></i>
-                        <i className="devicon-express-original text-3xl sm:text-4xl"></i>
-                        <i className="devicon-mysql-plain colored text-3xl sm:text-4xl ml-2"></i>
-                        <i className="devicon-mongodb-plain colored text-3xl sm:text-4xl"></i>
-                        <i className="devicon-react-plain colored text-3xl sm:text-4xl mx-2"></i>
-                        <i className="devicon-tailwindcss-plain colored text-3xl sm:text-4xl mx-2"></i>
-                    </div>
+                    <Tech />
                 </div>
                 <div className='my-2'>
                     <Link to='portfolio' activeClass='active' smooth={true} spy={true} duration={500}>
@@ -37,7 +27,6 @@ const Home = () => {
                     </Link>
                 </div>
             </div>
-
         </div>
     )
 }

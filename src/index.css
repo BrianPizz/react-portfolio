@@ -1,6 +1,6 @@
 /* import font */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
+/* import tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,16 +24,4 @@
     }
 }
 
-@media (max-width: 767px) {
-    .mobile-hover-effect {
-      background: rgba(0, 0, 0, 0.7);
-      color: white;
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-  
-    .mobile-hover-effect:hover {
-      opacity: 1;
-    }
-  }
   

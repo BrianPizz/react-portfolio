@@ -1,5 +1,5 @@
 import React from 'react'
-
+// destructure props
 function ProjectCard({ key, title, description, tech1, tech2, codeLink, demoLink, imageLink, index }) {
     // display image on left side on projects with an even numbered index
     const isEven = index % 2 === 0;
