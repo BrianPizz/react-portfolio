@@ -20,6 +20,7 @@
     .active{
         @apply bg-rose-500;
         @apply text-black;
+        @apply rounded;
     }
 }
 
