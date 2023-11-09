@@ -18,6 +18,7 @@ Visit deployment link
 ## Usage
 [Deployment Link]()
 
+![Screenshot 2023-11-08 at 11 01 28 PM (2)](https://github.com/BrianPizz/react-portfolio/assets/138056153/366916e4-37da-4d70-9ceb-a311690a37f9)
 
 
 ## License
