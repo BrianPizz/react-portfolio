@@ -1,8 +1,29 @@
-# React + Vite
+# React-Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![License: ISC](https://img.shields.io/badge/License-ISC-brightgreen.svg)
 
-Currently, two official plugins are available:
+## Description
+* I built this to use my new React skills and display my projects
+* Throughout building this portfolio I learned React, Tailwind css, and react scroll
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Questions](#questions)
+
+## Installation
+Visit deployment link
+
+## Usage
+[Deployment Link]()
+
+
+
+## License
+This application is covered under:
+[ISC](https://choosealicense.com/licenses/isc/)
+
+## Questions
+For any further questions contact:  
+[GitHub](https://github.com/BrianPizz)  
