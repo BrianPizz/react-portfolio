@@ -6,7 +6,7 @@ function ProjectCard({ key, title, description, tech1, tech2, codeLink, demoLink
     const leftSide = isEven ? 'md:w-6/12' : 'md:w-6/12 order-2'
 
     return (
-        <div key={key} className='border-2 md:flex w-full p-3 rounded-2xl mb-5 shadow-2xl'>
+        <div key={key} className=' bg-black md:flex w-full p-5 rounded-2xl mb-5 shadow-2xl'>
             {/* image section */}
             <div className={`rounded-2xl overflow-clip ${leftSide}`}>
                 <img src={imageLink} alt={title} className='object-scale-down h-full' />
@@ -14,7 +14,7 @@ function ProjectCard({ key, title, description, tech1, tech2, codeLink, demoLink
             {/* info section */}
             <div className='text-center flex flex-col md:w-6/12 px-4 my-2'>
                 <div>
-                    <h2 className='text-xl'> {title} </h2>
+                    <h2 className='text-xl mb-3'> {title} </h2>
                     <p className=' text-slate-300'> {description} </p>
                 </div>
                 <div className='flex justify-center mt-4 mb-4 text-xl font-bold'>
