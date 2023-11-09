@@ -1,39 +1,97 @@
-import React from 'react'
-import { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
-// set nav state true or false each click
-const [nav, setNav] = useState(false);
-const handleNavClink = () => setNav(!nav)
+  const [nav, setNav] = useState(false);
+  // set home as the active link
+  const [activeLink, setActiveLink] = useState('Home'); 
 
-    return (
-        <div className='fixed w-full h-[80px] flex justify-end items-center px-4 bg-black text-gray-300'>
+  const handleNavClick = () => setNav(!nav);
 
-            {/* Nav */}
-            <ul className='hidden md:flex'>
-                <li>Home</li>
-                <li>About</li>
-                <li>Portfolio</li>
-                <li>Resume</li>
-                <li>Contact</li>
-            </ul>
+  // set clicked link to active
+  const handleNavLinkClick = (link) => {
+    setActiveLink(link);
+    setNav(false); 
+  };
 
-            {/* Menu */}
-            <div className='md:hidden z-10 cursor-pointer' onClick={handleNavClink}>
-                {!nav ? <FaBars /> : <FaTimes />}
-            </div>
+  return (
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-black text-gray-300'>
+      <div className='text-rose-300'>Brian Pizzimenti</div>
 
-            {/* Mobile menu */}
-            <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-black flex flex-col justify-center items-center'}>
-                <li className='py-6 text-4xl'>Home</li>
-                <li className='py-6 text-4xl'>About</li>
-                <li className='py-6 text-4xl'>Portfolio</li>
-                <li className='py-6 text-4xl'>Resume</li>
-                <li className='py-6 text-4xl'>Contact</li>
-            </ul>
-        </div>
-    )
-}
+      {/* Nav */}
+      <ul className='hidden md:flex'>
+        <li
+          onClick={() => handleNavLinkClick('Home')}
+          className={activeLink === 'Home' ? 'active' : ''}
+        >
+          Home
+        </li>
+        <li
+          onClick={() => handleNavLinkClick('About')}
+          className={activeLink === 'About' ? 'active' : ''}
+        >
+          About
+        </li>
+        <li
+          onClick={() => handleNavLinkClick('Portfolio')}
+          className={activeLink === 'Portfolio' ? 'active' : ''}
+        >
+          Portfolio
+        </li>
+        <li
+          onClick={() => handleNavLinkClick('Resume')}
+          className={activeLink === 'Resume' ? 'active' : ''}
+        >
+          Resume
+        </li>
+        <li
+          onClick={() => handleNavLinkClick('Contact')}
+          className={activeLink === 'Contact' ? 'active' : ''}
+        >
+          Contact
+        </li>
+      </ul>
 
-export default Navbar
+      {/* Menu */}
+      <div className='md:hidden z-10 cursor-pointer' onClick={handleNavClick}>
+        {!nav ? <FaBars /> : <FaTimes />}
+      </div>
+
+      {/* Mobile menu */}
+      <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-black flex flex-col justify-center items-center'}>
+        <li
+          className={`py-6 text-4xl ${activeLink === 'Home' ? 'active-link' : ''}`}
+          onClick={() => handleNavLinkClick('Home')}
+        >
+          Home
+        </li>
+        <li
+          className={`py-6 text-4xl ${activeLink === 'About' ? 'active-link' : ''}`}
+          onClick={() => handleNavLinkClick('About')}
+        >
+          About
+        </li>
+        <li
+          className={`py-6 text-4xl ${activeLink === 'Portfolio' ? 'active-link' : ''}`}
+          onClick={() => handleNavLinkClick('Portfolio')}
+        >
+          Portfolio
+        </li>
+        <li
+          className={`py-6 text-4xl ${activeLink === 'Resume' ? 'active-link' : ''}`}
+          onClick={() => handleNavLinkClick('Resume')}
+        >
+          Resume
+        </li>
+        <li
+          className={`py-6 text-4xl ${activeLink === 'Contact' ? 'active-link' : ''}`}
+          onClick={() => handleNavLinkClick('Contact')}
+        >
+          Contact
+        </li>
+      </ul>
+    </div>
+  );
+};
+
+export default Navbar;

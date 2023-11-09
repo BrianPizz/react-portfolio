@@ -9,10 +9,17 @@
 @layer base {
     body {
         @apply font-[Raleway];
+        @apply text-lg
     }
     li {
         @apply px-4;
         @apply cursor-pointer;
+        @apply py-6;
+        @apply rounded
+    }
+    .active{
+        @apply bg-rose-300;
+        @apply text-black;
     }
 }
 
