@@ -3,7 +3,7 @@
 ![License: ISC](https://img.shields.io/badge/License-ISC-brightgreen.svg)
 
 ## Description
-* I built this to use my new React skills and display my projects
+* I built this aplication to use my React skills and display my projects
 * Throughout building this portfolio I learned React, Tailwind css, and react scroll
 
 ## Table of Contents
