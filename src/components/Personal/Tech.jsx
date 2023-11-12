@@ -12,6 +12,7 @@ function Tech() {
             <i className="devicon-mongodb-plain colored text-3xl sm:text-4xl"></i>
             <i className="devicon-react-plain colored text-3xl sm:text-4xl mx-2"></i>
             <i className="devicon-tailwindcss-plain colored text-3xl sm:text-4xl mx-2"></i>
+            <i className="devicon-bootstrap-plain colored text-3xl sm:text-4xl mx-2"></i>
         </div>
     )
 }
