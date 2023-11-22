@@ -1,6 +1,16 @@
 const projects = [
     {
         id: 1,
+        title: 'Employ-Ease',
+        description: 'A practical and effective tool to help users find careers. EmployEase sorts job applications into an easily manageable and trackable job board',
+        tech1: 'React',
+        tech2: 'MongoDB',
+        codeLink: 'https://github.com/BrianPizz/EmployEase',
+        demoLink: 'https://thawing-eyrie-65047-2d2e54b0acae.herokuapp.com/',
+        imageLink: '/assets/images/employease.png',
+    },
+    {
+        id: 2,
         title: 'FitHub',
         description: 'This project was created to provide the user with an application to display their fashion sense. Users will be able to put together outfits, save them to their account, and display them to other users',
         tech1: 'Handlebars.js',
@@ -10,7 +20,7 @@ const projects = [
         imageLink: '/assets/images/fithub.png',
     },
     {
-        id: 2,
+        id: 3,
         title: 'techBlog',
         description: 'A blog for tech enthusiasts, developer, and anyone interested in the world of tech. Stay informed about the latest tech trends and engage with the community. Users can create an account, make posts, and interact with other posts.',
         tech1: 'Handlebars.js',
@@ -20,7 +30,7 @@ const projects = [
         imageLink: '/assets/images/techblog.png',
     },
     {
-        id: 3,
+        id: 4,
         title: 'Weather Dashboard',
         description: 'Get weather information for any city. View current weather, five day forecast, and current date. Switch between metric and imperial units along with a persistent search history.',
         tech1: 'JavaScript',
@@ -30,7 +40,7 @@ const projects = [
         imageLink: '/assets/images/weatherapp.png',
     },
     {
-        id: 4,
+        id: 5,
         title: 'Note Taker',
         description: 'The Note Taker App is a user-friendly web application that simplifies the process of taking and organizing notes. Whether you are a student, professional, or anyone in need of a reliable note-taking solution, this app is designed to streamline the note-taking experience.',
         tech1: 'JavaScript',
@@ -40,7 +50,7 @@ const projects = [
         imageLink: '/assets/images/noteapp.png',
     },
     {
-        id: 5,
+        id: 6,
         title: 'Moodie',
         description: 'On the Moodie app, a movie and meal plan is generated for users to have a perfect night in. Third-party APIs are used to suggest movie titles based off of a users response to prompts along with a recipe',
         tech1: 'JavaScript',
@@ -48,17 +58,7 @@ const projects = [
         codeLink: 'https://github.com/BrianPizz/caseCamels-Moodie',
         demoLink: 'https://brianpizz.github.io/caseCamels-Moodie/',
         imageLink: '/assets/images/moodie.png',
-    },
-    {
-        id: 6,
-        title: 'Password Generator',
-        description: 'Used to generate a random secure password.',
-        tech1: 'JavaScript',
-        tech2: 'HTML/CSS',
-        codeLink: 'https://github.com/BrianPizz/random-password-generator',
-        demoLink: 'https://brianpizz.github.io/random-password-generator/',
-        imageLink: '/assets/images/passwordapp.png',
-    },
+    }
 ]
 
 export default projects
