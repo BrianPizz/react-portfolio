@@ -48,16 +48,6 @@ const projects = [
         codeLink: 'https://github.com/BrianPizz/note-taker',
         demoLink: 'https://secure-wildwood-92062-f253f9758515.herokuapp.com/',
         imageLink: '/assets/images/noteapp.png',
-    },
-    {
-        id: 6,
-        title: 'Moodie',
-        description: 'On the Moodie app, a movie and meal plan is generated for users to have a perfect night in. Third-party APIs are used to suggest movie titles based off of a users response to prompts along with a recipe',
-        tech1: 'JavaScript',
-        tech2: 'HTML/BULMA',
-        codeLink: 'https://github.com/BrianPizz/caseCamels-Moodie',
-        demoLink: 'https://brianpizz.github.io/caseCamels-Moodie/',
-        imageLink: '/assets/images/moodie.png',
     }
 ]
 
