@@ -6,6 +6,7 @@
 * I built this aplication to use my React skills and display my projects
 * Throughout building this portfolio I learned React, Tailwind css, and react scroll
 
+
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
