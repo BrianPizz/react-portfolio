@@ -6,7 +6,7 @@ const projects = [
         tech1: 'React',
         tech2: 'MongoDB',
         codeLink: 'https://github.com/BrianPizz/EmployEase',
-        demoLink: 'https://thawing-eyrie-65047-2d2e54b0acae.herokuapp.com/',
+        demoLink: 'https://employease-aasv.onrender.com',
         imageLink: '/assets/images/employease.png',
     },
     {
