@@ -16,7 +16,7 @@ const projects = [
         tech1: 'Handlebars.js',
         tech2: 'MySQL',
         codeLink: 'https://github.com/BrianPizz/tech-blog',
-        demoLink: 'https://secret-earth-93021-43fb7762532d.herokuapp.com/',
+        demoLink: 'https://tech-blog-42fy.onrender.com',
         imageLink: '/assets/images/techblog.png',
     },    
     {
